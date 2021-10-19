@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
-  resources :articles
-  root to: "pages#home"
+  root to: "articles#index"
+  resources :articles, except: :index
+  # root to: "pages#home"
 end
