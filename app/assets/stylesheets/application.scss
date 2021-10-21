@@ -6,9 +6,10 @@
   box-sizing: border-box;
 }
 #navbar {
+  position: absolute;
   display: flex;
   justify-content: space-around;
-  background: blue;
+  // background: blue;
   color: white;
 
   align-items: center;
@@ -20,7 +21,7 @@
     // color: white;
   }
   a {
-    // color: white;
+    color: white;
     text-decoration: none;
     padding: 10px;
     &:hover {
@@ -42,7 +43,7 @@ h2 {
 }
 .second-group {
   display: flex;
-  background: red;
+  // background: red;
 
   a {
     display: flex;
@@ -51,6 +52,44 @@ h2 {
   .group {
     display: flex;
     align-items: center;
-    background: green;
+    background: white;
+    border-radius: 5px;
+    .fas {
+      color: grey;
+      padding: 5px;
+    }
+  }
+}
+// ---------- BANNER ----------
+
+#banner {
+  width: 100vw;
+  height: 90vh;
+  background: url(img4.jpg) no-repeat center/cover;
+
+  .group {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+    h2 {
+      padding: 20px;
+    }
+  }
+  .banner-group-link {
+    text-align: center;
+
+    a {
+      border-radius: 5px;
+      padding: 18px;
+      background: white;
+      color: black;
+      text-decoration: none;
+      &:hover {
+        color: white;
+        background: black;
+      }
+    }
   }
 }
