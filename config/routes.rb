@@ -4,7 +4,6 @@ Rails.application.routes.draw do
     collection do
       get :element
     end
-    end
   end
   # root to: "pages#home"
 end

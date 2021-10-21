@@ -6,6 +6,9 @@ class ArticlesController < ApplicationController
     @articles = Article.all
   end
 
+  def element
+    
+  end
   # GET /articles/1
   def show
   end
